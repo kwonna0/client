@@ -202,7 +202,7 @@ const Question = ({question, index, updateQuestion, addOptionQuestion, updateqty
             <textarea value = {question.options.title} onChange ={e=>updateText(index,e.target.value)}/>
             {
                 question.options.map((option,index)=>{
-                    return <div>
+                    return <div key= {index}>
                         <textarea value = {option.title} onChange ={e=>optionText(question.id,option.id,1,e.target.value)}/> 
                         <br/>
                         <textarea value = {option.desc} onChange ={e=>optionText(question.id,option.id,2,e.target.value)}/> 
