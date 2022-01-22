@@ -136,14 +136,15 @@ const optionText = (qid,oid,type, text) =>{
    
     const submit = async()=>{
 
-        const url = "https://final.kwonna.link"
+        const url = "https://final.kwonna.link/test"
 
 
-        axios.get(url)
+        axios.post(url)
         .then(
             res => {console.log(res)}
+            
         )
-        
+
     }
     
 
